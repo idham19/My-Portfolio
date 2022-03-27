@@ -1,0 +1,108 @@
+footer {
+    margin-top: 6rem;
+    background: linear-gradient(rgb(213, 213, 233), rgb(156, 156, 185));
+    padding: 5rem 2rem;
+    .container {
+      display: grid;
+      grid-template-columns: 45% 55%;
+      gap: 5rem;
+      .footers__container {
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: 1fr 2fr;
+        .footer {
+          .icons {
+            a {
+              padding: 0.4rem;
+              font-size: 1.3rem;
+              
+          
+            }
+          }
+          color: black;
+          a {
+            color: black;
+          }
+  
+          h1 {
+            margin-bottom: 2rem;
+            font-weight: 600;
+          }
+          p {
+            line-height: 2;
+            margin: 1rem;
+            text-align: left;
+          }
+          .nav__menu {
+            li {
+              padding: 1rem 0;
+              a {
+                  transition: all 0.4s;
+                  &:hover{
+                      font-weight: 600;
+                  }
+              }
+            }
+          }
+        }
+      }
+      .form {
+          h1{
+              font-weight: 600;
+          }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          padding: 1rem;
+          input,
+          textarea {
+            width: 90%;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    footer {
+      .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          align-items: center;
+          text-align: center;
+        .footers__container {
+          display: grid;
+          grid-template-columns: 1fr;
+         .footer{
+            p{
+                text-align: center;
+            }
+         }
+        }
+  
+        .form {
+          align-items: center;
+          h1{
+              margin-bottom: 2rem;
+          }
+          
+          form {
+            gap: 1rem;
+            padding: 0rem;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+  
+            input,
+            textarea {
+              width: 80%;
+              padding: 0.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
